@@ -31,3 +31,23 @@ URL do curso -> [Elixir - Conhecendo o Ecossistema Elixir](https://cursos.alura.
 ### 02 - Entendendo o Mix
 * Como criar uma aplicação **Elixir** com `mix new APP_NAME`.
 * Estrutura de uma aplicação **Elixir**.
+
+***
+
+## 02 - Processos &#x1F516;
+* Aprendemos a criar processos em Elixir.
+* Vimos como processos se comunicam.
+* Entendemos que processos são a base de uma aplicação em Elixir.
+* Conhecemos detalhes sobre processos.
+
+### 01 - Spawn
+* Criar um novo processo com `spawn`.
+* Verificar se um processo está ativo ou não com `Process.alive?`.
+
+### 02 - Comunicação
+* Criar função de recebimento de mensagens com `receive`.
+* Enviar mensagens com a função `send`.
+
+### 03 - Detalhes
+* Detalhes da função `send`.
+* Especificar tempo de espera com `after`.
