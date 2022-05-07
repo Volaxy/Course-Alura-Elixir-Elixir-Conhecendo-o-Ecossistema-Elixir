@@ -16,11 +16,11 @@ defmodule ElixirApplication.MixProject do
     [
       extra_applications: [:logger]
       # Essa função cria um novo processo passando uma função como parâmetro
-      spawn(fn -> IO.puts("Process initialized") end)
+      spawn(fn -> IO.puts("Process initialized") end) # NOT FUNCTIONAL CODE
       
-      pid = spawn(fn -> IO.puts("Process initialized") end)
+      pid = spawn(fn -> IO.puts("Process initialized") end) # NOT FUNCTIONAL CODE
       # Essa função verifica se um processo está ativo ou não retornando "true" ou "false" respectivamente
-      Process.alive?(pid)
+      Process.alive?(pid) # NOT FUNCTIONAL CODE
     ]
   end
 

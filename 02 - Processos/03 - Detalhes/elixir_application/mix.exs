@@ -17,15 +17,15 @@ defmodule ElixirApplication.MixProject do
       extra_applications: [:logger]
 
       # A função "send" não interrompe o nosso processo, ela é adicionada à MailBox, ou caixa de correio, do processo destino, ou seja, adiciona no processo principal (nesse exemplo), uma mensagem
-      send(self(), {:ok, "Process"})
+      send(self(), {:ok, "Process"}) # NOT FUNCTIONAL CODE
 
       # O método "receive" por outro lado, interrompe o processo atual
-      receive do
-        {:ok, content} -> IO.puts(content)
+      receive do # NOT FUNCTIONAL CODE
+        {:ok, content} -> IO.puts(content) # NOT FUNCTIONAL CODE
         # O bloco "after" é executado depois de x milisegundos caso o receive não receba nenhuma mensagem
-        after
-          1000 -> IO.puts("Error")
-      end
+        after # NOT FUNCTIONAL CODE
+          1000 -> IO.puts("Error") # NOT FUNCTIONAL CODE
+      end # NOT FUNCTIONAL CODE
     ]
   end
 

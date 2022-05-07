@@ -17,18 +17,18 @@ defmodule ElixirApplication.MixProject do
       extra_applications: [:logger]
 
       # O "receive" é uma macro que executa algum código quando recebe uma mensagem
-      pid = spawn(fn -> receive do
-          content -> IO.puts(content)
-          end
-        end
-      )
+      pid = spawn(fn -> receive do # NOT FUNCTIONAL CODE
+          content -> IO.puts(content) # NOT FUNCTIONAL CODE
+          end # NOT FUNCTIONAL CODE
+        end # NOT FUNCTIONAL CODE
+      ) # NOT FUNCTIONAL CODE
 
       # A função "send" envia uma mensagem passando como parâmetro o pid em que será o processo da mensagem e a mensagem em si
       # Assim que a função de recebimento recebe a mensagem, o processo não fica mais ativo
-      send(pid, "Text to be displayed in the child process")
+      send(pid, "Text to be displayed in the child process") # NOT FUNCTIONAL CODE
 
       # O "self()" retorna o próprio processo atual, que no caso será o programa executando
-      self()
+      self() # NOT FUNCTIONAL CODE
     ]
   end
 
