@@ -71,3 +71,36 @@ URL do curso -> [Elixir - Conhecendo o Ecossistema Elixir](https://cursos.alura.
 * Acessar a documentação longa através do `mix help TASK_NAME`.
 * Criar documentação curta com `@shortdoc`.
 * Adicionar documentação de uma tarefa na lista do `mix help`.
+
+***
+
+## 04 - Aplicação
+* Gerenciamos nossa primeira dependência (pacote externo).
+* Efetivamente criamos uma aplicação Mix.
+* Definimos configurações para o projeto Mix.
+* Utilizamos o conceito de GenServer para receber mensagens.
+
+### 01 - Instalando uma Dependência
+* Adicionar uma dependência no arquivo *mix.ex*.
+* Buscar todas as dependências que foram definidas com `mix deps.get`.
+* Utilizar um módulo dentro de uma aplicação.
+
+### 02 - Criando uma Aplicação
+* Entender a finalidade do módulo da aplicação.
+* Criar uma **Supervision Tree**.
+* Entendendo o módulo do **Supervisor**.
+* Adicionar a aplicação no módulo *mix.ex*.
+
+### 03 - Agendando uma Tarefa
+* Definir as configurações de um projeto com *config.exs*.
+* Executar a aplicação com `mix run`.
+    * Ao usar o comando do `mix run`, a aplicação encerra, pois não há serviços ou processos executando, logo ele termina a aplicação.
+* O comando `mix run --no-halt` faz o mesmo processo que o `mix run`, mas:
+    * Pegar o arquivo *mix.exs*, compilar todos os arquivos.
+    * Gerar uma aplicação do Erlang com todas as configurações feitas na aplicação.
+    * Executar o módulo principal, e esse módulo principal inicializa a **Supervision Tree**.
+* Monitorar a VM da Erlang através do `:observer.start`.
+
+### 04 - GenServer
+* Referênciar o próprio módulo com `__MODULE__`.
+* Enviar mensagens para processos.
