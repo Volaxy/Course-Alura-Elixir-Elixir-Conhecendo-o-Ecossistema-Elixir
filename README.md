@@ -51,3 +51,23 @@ URL do curso -> [Elixir - Conhecendo o Ecossistema Elixir](https://cursos.alura.
 ### 03 - Detalhes
 * Detalhes da função `send`.
 * Especificar tempo de espera com `after`.
+
+***
+
+## 03 - Mix Tasks &#x1F516;
+* Vimos que podemos criar um código "comum" em projetos Mix.
+* Aprendemos a criar uma tarefa do Mix.
+* Aprendemos um pouco sobre documentação em Elixir.
+
+### 01 - Criando um Código
+* Criar uma pasta `priv`.
+* Escrever números aleatórios em um arquivo.
+
+### 02 - Gerando uma Tarefa
+* Executar tarefas com `iex -S mix TASK_NAME` ou `mix TASK_NAME` (antes de executar a aplicação **Elixir**).
+
+### 03 - Documentando a Tarefa
+* Criar documentação do **Módulo** com `@moduledoc`.
+* Acessar a documentação longa através do `mix help TASK_NAME`.
+* Criar documentação curta com `@shortdoc`.
+* Adicionar documentação de uma tarefa na lista do `mix help`.
