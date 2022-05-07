@@ -13,12 +13,6 @@ URL do curso -> [Elixir - Conhecendo o Ecossistema Elixir](https://cursos.alura.
 ## Links Úteis &#x1F517;
 * [Hex](https://hex.pm/) - Site oficial do **Hex** para pacotes do **Erlang**.
 
-## Siglas &#x1F5FA;
-*
-
-## Atalhos &#x2328;
-*
-
 ## 01 - Ecossistema &#x1F516;
 * Ecossistema do **Elixir**.
 * Usar o **Hex** para gerenciar pacotes.
@@ -74,7 +68,7 @@ URL do curso -> [Elixir - Conhecendo o Ecossistema Elixir](https://cursos.alura.
 
 ***
 
-## 04 - Aplicação
+## 04 - Aplicação &#x1F516;
 * Gerenciamos nossa primeira dependência (pacote externo).
 * Efetivamente criamos uma aplicação Mix.
 * Definimos configurações para o projeto Mix.
@@ -104,3 +98,25 @@ URL do curso -> [Elixir - Conhecendo o Ecossistema Elixir](https://cursos.alura.
 ### 04 - GenServer
 * Referênciar o próprio módulo com `__MODULE__`.
 * Enviar mensagens para processos.
+* Criar um servidor aleatório.
+
+***
+
+## 05 - Testes &#x1F516;
+* Conhecemos o ExUnit e rodamos os testes existentes.
+* Criamos nosso primeiro teste automatizado em Elixir.
+* Aprendemos a usar um pacote externo para mocks.
+* Conhecemos o ETS da Erlang.
+
+### 01 - Conhecendo o ExUnit
+* Executar testes com o comando `mix test`.
+    * Testes com um único arquivo usando `mix test PATH/FILE_NAME`.
+    * Testes com uma categoria de tag usando `mix test --only TAG_NAME`.
+    * Testes exceto uma categoria de tag usando `mix test --exclude TAG_NAME`.
+
+### 02 - Criando um Novo Teste
+* Fazer um teste com o valor escrito no arquivo *number.txt*.
+* Executar **doctests**.
+
+### 03 - Usando mock para criar um spy
+* Criar dublês de testes usando **Mock** e **Spy**.
